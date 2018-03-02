@@ -1,3 +1,4 @@
+import { TestComponent } from './test.component';
 import { SummaryPipe } from './summary.pipe';
 import { AuthorsService } from './authors.service';
 import { CoursesService } from './courses.service';
@@ -10,6 +11,8 @@ import { AppComponent } from './app.component';
 import { CoursesComponent } from "./courses.component";
 import { CourseComponent } from './course/course.component';
 import { AuthorsComponent } from './authors/authors.component';
+import { FavouriteComponent } from './favourite.component';
+import { TestFavComponent } from './test-fav/test-fav.component';
 
 
 @NgModule({
@@ -18,7 +21,10 @@ import { AuthorsComponent } from './authors/authors.component';
     CoursesComponent,
     CourseComponent,
     AuthorsComponent,
-    SummaryPipe
+    SummaryPipe,
+    FavouriteComponent,
+    TestComponent,
+    TestFavComponent
   ],
   imports: [
     BrowserModule,

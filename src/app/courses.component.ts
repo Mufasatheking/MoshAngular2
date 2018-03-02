@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'courses',
     template: `
+            <button class="btn btn-primary"></button>
             {{ text | summary:10 }} 
         `
 })
