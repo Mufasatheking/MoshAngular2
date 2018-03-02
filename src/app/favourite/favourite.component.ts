@@ -6,6 +6,7 @@ import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } fro
   styleUrls: ['./favourite.component.css'],
   encapsulation: ViewEncapsulation.Emulated
 })
+
 export class FavouriteComponent {
   @Input('isFavourite') isSelected: boolean;
   @Output('change') click = new EventEmitter();
