@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TestFavComponent } from './test-fav.component';
+import { TitleCaseComponent } from './title-case.component';
 
-describe('TestFavComponent', () => {
-  let component: TestFavComponent;
-  let fixture: ComponentFixture<TestFavComponent>;
+describe('TitleCaseComponent', () => {
+  let component: TitleCaseComponent;
+  let fixture: ComponentFixture<TitleCaseComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TestFavComponent ]
+      declarations: [ TitleCaseComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TestFavComponent);
+    fixture = TestBed.createComponent(TitleCaseComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,4 +1,3 @@
-import { TestComponent } from './test.component';
 import { SummaryPipe } from './summary.pipe';
 import { AuthorsService } from './authors.service';
 import { CoursesService } from './courses.service';
@@ -11,9 +10,8 @@ import { AppComponent } from './app.component';
 import { CoursesComponent } from "./courses.component";
 import { CourseComponent } from './course/course.component';
 import { AuthorsComponent } from './authors/authors.component';
-import { FavouriteComponent } from './favourite.component';
-import { TestFavComponent } from './test-fav/test-fav.component';
-
+import { TitleCaseComponent } from './title-case/title-case.component';
+import { TitleCasePipe } from './title-case.pipe';
 
 @NgModule({
   declarations: [
@@ -22,9 +20,8 @@ import { TestFavComponent } from './test-fav/test-fav.component';
     CourseComponent,
     AuthorsComponent,
     SummaryPipe,
-    FavouriteComponent,
-    TestComponent,
-    TestFavComponent
+    TitleCaseComponent,
+    TitleCasePipe
   ],
   imports: [
     BrowserModule,
