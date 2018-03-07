@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
     selector: 'courses',
     template: `
             <button class="btn btn-primary"></button>
-            {{ text | summary:10 }} 
+            {{ text }} 
         `
 })
 
