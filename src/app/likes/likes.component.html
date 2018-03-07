@@ -1,0 +1,7 @@
+<span 
+  class="glyphicon glyphicon-heart"
+  [style.cursor] = "pointer"
+  [style.color] = "isLiked ? 'deeppink' : '#ccc'"
+  (click)="onClick()"
+  ></span>
+<span>{{ likesCount }}</span>
