@@ -10,6 +10,7 @@ import { CoursesComponent } from "./courses.component";
 import { CourseComponent } from './course/course.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { InputFormatDirective } from './input-format.directive';
+import { ZippyComponent } from './zippy/zippy.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { InputFormatDirective } from './input-format.directive';
     CoursesComponent,
     CourseComponent,
     AuthorsComponent,
-    InputFormatDirective
+    InputFormatDirective,
+    ZippyComponent
   ],
   imports: [
     BrowserModule,
