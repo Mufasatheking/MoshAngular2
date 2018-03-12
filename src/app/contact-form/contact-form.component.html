@@ -1,5 +1,6 @@
 <form #f="ngForm" (ngSubmit)="submit(f)">
-  <div class="form-group">
+  <div ngModelGroup="contact" #contact="ngModelGroup">
+    <div class="form-group">
   <label for="firstName">First Name</label>
   <input 
     required 
@@ -25,6 +26,7 @@
     <div *ngIf="firstName.errors.pattern">
       First name doesnt match the pattern.
     </div>
+  </div>
   </div>
   </div>
   <div class="form-group">
