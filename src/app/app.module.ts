@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CourseComponent } from './course/course.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CourseComponent,
     AuthorsComponent,
-    NewCourseFormComponent
+    NewCourseFormComponent,
+    ChangePasswordComponent
   ],
   imports: [
     BrowserModule,
