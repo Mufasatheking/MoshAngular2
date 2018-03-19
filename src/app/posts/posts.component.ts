@@ -7,12 +7,15 @@ import { Http } from "@angular/http";
   styleUrls: ['./posts.component.css']
 })
 
-export class PostsComponent {
+export class PostsComponent implements OnInit {
   posts: any[];
   private url = 'http://jsonplaceholder.typicode.com/posts';
 
   constructor(private http: Http){
-    http.get(this.url).subscribe(response => {
+  }
+
+  ngOnInit(): void {
+      this.http.get(this.url).subscribe(response => {
       this.posts = response.json();
     })
   }
