@@ -16,6 +16,9 @@ export class PostsComponent implements OnInit {
   ngOnInit(): void {
       this.service.getPosts().subscribe(response => {
       this.posts = response.json();
+    }, error => {
+      alert('An unexpcted error occured');
+      console.log(error);
     })
   }
 
@@ -27,12 +30,18 @@ export class PostsComponent implements OnInit {
       post['id'] = response.json().id;
       this.posts.splice(0, 0, post);
       console.log(response.json());
+    }, error => {
+      alert('An unexpcted error occured');
+      console.log(error);
     })
   }
 
   updatePost(post){
     this.service.updatePost(post).subscribe(response => {
       console.log(response.json());
+    }, error => {
+      alert('An unexpcted error occured');
+      console.log(error);
     })
   }
 
@@ -40,6 +49,9 @@ export class PostsComponent implements OnInit {
     this.service.deletePost(post.id).subscribe(response => {
       let index = this.posts.indexOf(post);
       this.posts.splice(index, 1);
+    }, error => {
+      alert('An unexpcted error occured');
+      console.log(error);
     })
   }
 }
